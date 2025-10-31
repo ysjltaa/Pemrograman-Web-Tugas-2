@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="notification" id="notification"></div>
+    
+    <div class="container">
+        <div class="todo-app">
+            <div class="todo-header">
+                <div class="user-info">
+                    <h1>Hello Yesi,</h1>
+                    <h3>what's your plan for today?</h3>
+                </div>
+            </div>
+            
+            <div class="date-display" id="date-display"></div>
+            
+            <div class="stat-container">
+                <div class="details">
+                    <h3 id="motivation-text">Keep it up!</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stats-number">
+                    <p id="numbers">0 / 0</p>
+                </div>
+            </div>
+            
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="add a new task...">
+                <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            
+            <div class="todos-container">
+                <ul id="task-list"></ul>
+                </div>
+            
+            <div class="footer">
+                <span id="task-count">0 tasks</span>
+                <button class="clear-completed" id="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
